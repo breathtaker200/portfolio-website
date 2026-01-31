@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Navigation from './sections/Navigation';
 import Hero from './sections/Hero';
 import LogoStream from './sections/LogoStream';
@@ -68,6 +69,9 @@ function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
